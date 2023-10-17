@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Car {
 
     private String make;
@@ -19,6 +21,20 @@ public class Car {
 
     public void setPrice(float price) {
         this.price = price;
+    }
+
+    public void setDetails()
+    {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter a Car Make : ");
+        String make = input.nextLine();
+
+        System.out.println("Enter a Car Price (rmb) : ");
+        float price = input.nextFloat();
+
+        setMake(make);
+        setPrice(price);
     }
 
     public void display() {
