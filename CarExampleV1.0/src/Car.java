@@ -28,13 +28,10 @@ public class Car {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter a Car Make : ");
-        String make = input.nextLine();
+        this.make = input.nextLine();
 
         System.out.println("Enter a Car Price (rmb) : ");
-        float price = input.nextFloat();
-
-        setMake(make);
-        setPrice(price);
+        this.price = input.nextFloat();
     }
 
     public void display() {
