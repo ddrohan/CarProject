@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Car {
 
+    // this is 
     private String make;
     private float price;
 
